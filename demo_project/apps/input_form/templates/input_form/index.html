@@ -1,1 +1,22 @@
-Hello World
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'input_form/css/bootstrap.css' %}"
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+Welcome!
+<p>This is Home page.</p>
+<div class="card" style="width: 18rem;">
+    <img src="{% static 'input_form/img/home_icon.png' %}" class="card-img-top" alt="Image of a home.">
+    <div class="card-body">
+        <h5 class="card-title">Home</h5>
+        <p class="card-text">Home sweet home.</p>
+        <a href="config" class="btn btn-primary">Go somewhere</a>
+    </div>
+</div>
+</body>
+</html>
